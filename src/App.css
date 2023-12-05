@@ -8,9 +8,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   font-size: calc(5px + 2vmin);
   color: lightgrey;
+  padding-bottom: 10px;
 }
 
 

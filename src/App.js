@@ -9,7 +9,7 @@ function App() {
         <p>Play Tic-Tac-Toe against the AI. (PD. You'll never win).</p>
         <Tictactoe />
       </header>
-      <p>Made by <a href="https://github.com/davidhelo/">Davidhelo</a></p>
+      <p>Made by <a href="https://github.com/davidhelo/">Davidhelo</a>. See source code for this project <a href="https://github.com/davidhelo/tictactoeAI">here</a>.</p>
     </div>
   );
 }

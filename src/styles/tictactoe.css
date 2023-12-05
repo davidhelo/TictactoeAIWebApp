@@ -4,8 +4,8 @@
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    min-width: min(90vw, 500px);
-    height: 500px;
+    min-width: min(94vw, 500px);
+    height: 450px;
     background-color: black;
     border: 1px solid black;
     box-shadow: 6px 6px black;
@@ -66,14 +66,15 @@
 
 .banner {
     width: 98%;
-    height: 40px;
+    height: 60px;
     position: absolute;
-    top: 26vh;
+    top: 30vh;
     background-color: darkred;
     border-top: 5px double black;
     border-bottom: 5px double black;
     text-align: center;
     font-weight: 700;
+    font-size: 2rem;
     z-index: 999;
 }
 
