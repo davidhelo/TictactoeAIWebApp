@@ -22,8 +22,8 @@ function getNextPlayer(board) {
 }
 
 async function fetchOptimalMove(boardData) {
-    let url = 'http://127.0.0.1:8000/optimalmove/'
-    // let url = '/optimalmove/'
+    // let url = 'http://127.0.0.1:8000/optimalmove/'
+    let url = '/optimalmove/'
     const data = await axios.post(url, {board: boardData});
     return data;
 }
