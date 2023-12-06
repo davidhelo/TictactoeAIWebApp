@@ -111,23 +111,27 @@ function Tictactoe(){
                 </div>
                 : 
                 <>
-                    <div className='button' onClick={(e) => {restartGame()}}
+                    <div className='button' id="restartButton" onClick={(e) => {restartGame()}}
                     > Restart game
                     </div>
-                    {humanSymbol === getNextPlayer(board) ? <p>It's your turn: </p> : <p>Computer thinking (caculating AI move)...</p>}
-                    {winner !== null ?
-                    <div className="banner"><p>
-                        { winner === "TIE" ? 
-                            "TIE!"
-                            : winner === humanSymbol ?
-                            "YOU WIN!"
-                            : winner !== humanSymbol && winner !== null ?
-                            "LOSER!"
-                            : <></>
+                    <div className="messagesContainer">
+                        { winner === null ? 
+                            humanSymbol === getNextPlayer(board) ? <p>It's your turn: </p> 
+                            : <p>Computer thinking (caculating AI move)...</p>
+                        : winner !== null ?
+                        <div className="banner"><p>
+                            { winner === "TIE" ? 
+                                "TIE!"
+                                : winner === humanSymbol ?
+                                "YOU WIN!"
+                                : winner !== humanSymbol && winner !== null ?
+                                "LOSER!"
+                                : <></>
+                            }
+                        </p></div>
+                        : <></>
                         }
-                    </p></div>
-                    : <></>
-                    }
+                    </div>
                     <div className={winner === null && getNextPlayer(board) === humanSymbol ? "board-container" : "board-container disabled"}>
                         {renderCells}
                     </div>
